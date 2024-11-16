@@ -15,6 +15,9 @@ app.use(express.json());
 const conn = require('./db/conn');
 const User = require('./models/User');
 
+const mainRoutes = require('./routes/mainRoutes')
+app.use('/', mainRoutes)
+
 conn
     .sync()
     .then(() => {
