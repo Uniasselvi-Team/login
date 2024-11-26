@@ -553,3 +553,11 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
